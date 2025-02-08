@@ -1,0 +1,25 @@
+<form method="POST">
+    {% csrf_token %}
+    <label>Name:</label>
+    <input type="text" name="name" required><br>
+
+    <label>Email:</label>
+    <input type="email" name="email" required><br>
+
+    <label>Phone:</label>
+    <input type="text" name="phone" required><br>
+
+    <label>Summary:</label>
+    <textarea name="summary" required></textarea><br>
+
+    <label>Education:</label>
+    <textarea name="education" required></textarea><br>
+
+    <label>Experience:</label>
+    <textarea name="experience" required></textarea><br>
+
+    <label>Skills:</label>
+    <textarea name="skills" required></textarea><br>
+
+    <button type="submit">Save Resume</button>
+</form>
